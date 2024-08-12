@@ -4,7 +4,7 @@ Hi! My name is Olav and this repository contains the code for my portfolio websi
 
 ## 🛠 Setup
 
-To get the portfolio project running locally, follow these instructions:
+To get the portfolio project running on a local machine, follow these instructions:
 
 ### Prerequisites
 
