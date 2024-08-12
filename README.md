@@ -1,6 +1,6 @@
-# My Portfolio Website
+# Olav's portfolio
 
-This repository contains the code for my portfolio website built with Python Flask, HTML, CSS and JavaScript. This site showcases my work, skills, and experience.
+Hi! My name is Olav and this repository contains the code for my portfolio website built with Python Flask, HTML, CSS and JavaScript. This site showcases my work, skills, and experience.
 
 ## 🛠 Setup
 
