@@ -37,7 +37,7 @@ To get the portfolio project running on a local machine, follow these instructio
 
 ## 🚀 Deployment
 
-The website is deployed at [olavkhn.nl](http://85.10.140.87:999) 
+The website is deployed at [olavkhn.nl](http://85.10.140.87:99) 
 
 ## 📧 Contact
 
