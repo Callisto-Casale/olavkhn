@@ -18,7 +18,7 @@ def hello_world():
 
 @app.route("/test")
 def test():
-    return 'It works!'
+    return 'It automaticlly reloads!'
 
 def verify_signature(payload_body, secret_token, signature_header):
     """Verify that the payload was sent from GitHub by validating SHA256.
