@@ -8,7 +8,6 @@ from flask import Flask, request
 from flask import render_template
 from dotenv import load_dotenv
 load_dotenv()
-# Test comment 7
 
 app = Flask(__name__)
 
@@ -16,7 +15,7 @@ app = Flask(__name__)
 def hello_world():
     return render_template("index.html")
 
-
+#? Function from `https://docs.github.com/en/webhooks/using-webhooks/validating-webhook-deliveries`
 def verify_signature(payload_body, secret_token, signature_header):
     """Verify that the payload was sent from GitHub by validating SHA256.
 
@@ -37,9 +36,7 @@ def verify_signature(payload_body, secret_token, signature_header):
 @app.route('/reload', methods=['POST'])
 def github_reload():
     """
-
     A function to reload the Flask server when a push event is received from GitHub.
-    
     """
     
     payload_body = request.get_data()
