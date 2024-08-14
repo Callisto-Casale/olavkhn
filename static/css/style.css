@@ -127,6 +127,7 @@ body{
     /* margin-left: 150px; */
 }
 .particles-js-canvas-el{
+    position: fixed;
     top: -30px !important;
 }
 #particles-js{
