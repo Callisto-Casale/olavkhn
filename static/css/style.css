@@ -15,6 +15,47 @@ body{
     padding: 1rem 1rem;
     vertical-align: middle;
 }
+.gradient-line {
+    width: 650px; /* Adjust width as needed */
+    height: 4px; /* Adjust height as needed */
+    background: linear-gradient(90deg, red, rgb(0, 0, 0), red);
+    background-size: 200% 100%; /* Larger background size for smoother animation */
+    animation: gradientMove 3s infinite linear;
+    margin-top: 10px; /* Adjust margin to position the line under the text */
+}
+.gradient-line-2{
+    width: 650px; /* Adjust width as needed */
+    height: 4px; /* Adjust height as needed */
+    background: linear-gradient(90deg, rgb(255, 23, 23), rgb(0, 0, 0), red);
+    background-size: 200% 100%; /* Larger background size for smoother animation */
+    animation: gradientMove_2 3s infinite linear;
+    margin-top: 10px; /* Adjust margin to position the line under the text */
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes gradientMove_2 {
+    0% {
+        background-position: 0% 15%;
+    }
+    50% {
+        background-position: 100% 35%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 .title{
     font-family: "Roboto Mono", monospace;
     display: flex;
@@ -33,10 +74,51 @@ body{
     vertical-align: middle; 
 }
 #qualities{
-    background-color: rgb(57, 57, 57);
+    background-color: rgba(0, 0, 0, 0.95);
     margin-top: -15px !important;
     color: white;
 }
+.project-card {
+    background-color: #000000;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #560000; /* Subtle border */
+}
+.project_link{
+    text-decoration: none;
+}
+.project_link:hover{
+    color: white;
+}
+.project-card:hover {
+    transform: translateY(-10px); /* Lift the card */
+    transform: scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.15); /* Add shadow */
+}
+
+.project-card .card-body {
+    position: relative;
+    z-index: 1;
+}
+
+.project-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #cccccc;
+}
+
+.project-text {
+    font-size: 0.9rem;
+    color: #bcbcbc;
+}
+
+.code_icons{
+    width: 50px;
+    height: auto;
+}
+
 #divider{
     background-color: rgb(0, 0, 0);
     height: 10px;
@@ -110,6 +192,7 @@ body{
 }
 .github_ref:hover{
     color: red;
+    transform: scale(1.05);
 }
 
 
