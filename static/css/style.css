@@ -104,6 +104,11 @@ body{
     font-size: 2rem;
     color: white;
 }
+.github_ref{
+    text-decoration: none;
+    color: white;
+
+}
 #full_name {
     font-size: 7em; /* Adjust font size as needed */
     color: #fff; /* Text color */
