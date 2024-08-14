@@ -5,6 +5,8 @@ let letterIndex = 0;
 let isDeleting = false;
 let typingSpeed = 450;
 
+console.log("Script.js is working")
+
 particlesJS.load('particles-js', 'static/json/particlesjs-config.json', function() {
     console.log('callback - particles.js config loaded');
   });
