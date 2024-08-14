@@ -1,3 +1,4 @@
+console.log("Script.js is working")
 const works = ["programmer ", "student ", "developer ", "learner ", "problem solver ", "dreamer ", "thinker"];
 const element = document.getElementById("what_am_i");
 let workIndex = 0;
@@ -5,7 +6,6 @@ let letterIndex = 0;
 let isDeleting = false;
 let typingSpeed = 450;
 
-console.log("Script.js is working")
 
 particlesJS.load('particles-js', 'static/json/particlesjs-config.json', function() {
     console.log('callback - particles.js config loaded');
