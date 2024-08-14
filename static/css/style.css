@@ -107,8 +107,12 @@ body{
 .github_ref{
     text-decoration: none;
     color: white;
-
 }
+.github_ref:hover{
+    color: red;
+}
+
+
 #full_name {
     font-size: 7em; /* Adjust font size as needed */
     color: #fff; /* Text color */
