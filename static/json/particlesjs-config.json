@@ -47,10 +47,10 @@
     },
     "line_linked": {
       "enable": true,
-      "distance": 150,
+      "distance": 159.93602558976417,
       "color": "#ff5454",
       "opacity": 0.4,
-      "width": 1
+      "width": 1.7592962814874056
     },
     "move": {
       "enable": true,
@@ -62,8 +62,8 @@
       "bounce": false,
       "attract": {
         "enable": false,
-        "rotateX": 600,
-        "rotateY": 1200
+        "rotateX": 6797.281087564977,
+        "rotateY": 5437.824870051982
       }
     }
   },
@@ -72,7 +72,7 @@
     "events": {
       "onhover": {
         "enable": false,
-        "mode": "bubble"
+        "mode": "repulse"
       },
       "onclick": {
         "enable": false,
