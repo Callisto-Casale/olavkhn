@@ -55,7 +55,11 @@ body{
         background-position: 0% 50%;
     }
 }
-
+.contact_icon{
+    width: 25px;
+    height: auto;
+    margin-right: 10px;
+}
 .title{
     font-family: "Roboto Mono", monospace;
     display: flex;
