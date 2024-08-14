@@ -127,7 +127,7 @@ body{
     /* margin-left: 150px; */
 }
 .particles-js{
-    position: static;
+    position: fixed;
     width: 100%;
     height: 100%;
     top: 150px;
