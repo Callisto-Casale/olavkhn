@@ -1,9 +1,13 @@
-const works = ["miner ", "coder ", "shopper "];
+const works = ["programmer ", "student ", "developer ", "learner ", "problem solver ", "dreamer ", "thinker"];
 const element = document.getElementById("what_am_i");
 let workIndex = 0;
 let letterIndex = 0;
 let isDeleting = false;
-let typingSpeed = 150;
+let typingSpeed = 450;
+
+particlesJS.load('particles-js', 'static/json/particles-config.json', function() {
+    console.log('callback - particles.js config loaded');
+  });
 
 function typeEffect() {
     const currentWork = works[workIndex];
@@ -14,7 +18,7 @@ function typeEffect() {
         typingSpeed = 50;  // Speed up for deletion
     } else {
         letterIndex++;
-        typingSpeed = 150;  // Normal speed for typing
+        typingSpeed = 50;  // Normal speed for typing
     }
 
     element.innerHTML = fullText.substring(0, letterIndex) + '<span class="typing"></span>';

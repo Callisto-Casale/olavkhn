@@ -17,6 +17,11 @@ body{
 }
 .title{
     font-family: "Roboto Mono", monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* Center text inside each element */
 }
 .typing {
     border-right: 2px solid rgb(255, 255, 255);
@@ -42,4 +47,82 @@ body{
         border-color: transparent;
     }
 }
+.fade {
+    color: white; /* Set the text color to white */
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    position: absolute;
+    font-size: 2em;
+    z-index: 1000;
+}
+.glowing-circle {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.7), /* Soft outer glow */
+                0 0 30px rgba(255, 0, 0, 0.5), /* Medium outer glow */
+                0 0 40px rgba(255, 0, 0, 0.3); /* Deep outer glow */
+    animation: pulse 2s infinite;
+}
 
+@keyframes pulse {
+    0%, 100% {
+        box-shadow: 0 0 20px rgba(255, 0, 0, 0.7), 
+                    0 0 30px rgba(255, 0, 0, 0.5), 
+                    0 0 40px rgba(255, 0, 0, 0.3);
+    }
+    50% {
+        box-shadow: 0 0 40px rgba(255, 0, 0, 1), 
+                    0 0 60px rgba(255, 0, 0, 0.7), 
+                    0 0 80px rgba(255, 0, 0, 0.5);
+    }
+}
+
+.visible {
+    opacity: 1;
+}
+
+.typing {
+    border-right: 2px solid white;
+    display: inline-block;
+    animation: blink 0.7s steps(1) infinite;
+    height: 1em;
+    vertical-align: middle;
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+#intro_container{
+    padding-top: 13rem;
+    padding-bottom: 13rem;
+}
+.sub_greeting{
+    font-size: 2rem;
+    color: white;
+}
+#full_name {
+    font-size: 7em; /* Adjust font size as needed */
+    color: #fff; /* Text color */
+    text-shadow: 
+        1px 1px 0 #000000,  /* Shadow 1 */
+        2px 2px 0 #1a0000,  /* Shadow 2 */
+        3px 3px 0 #330000,  /* Shadow 3 */
+        4px 4px 0 #4d0000,  /* Shadow 4 */
+        5px 5px 0 #660000,  /* Shadow 5 */
+        6px 6px 0 #800000,  /* Shadow 6 */
+        7px 7px 0 #990000,  /* Shadow 7 */
+        8px 8px 0 #b20000,  /* Shadow 8 */
+        9px 9px 0 #cc0000,  /* Shadow 9 */
+        10px 10px 0 #ff0000;  /* Shadow 10 */
+    position: relative;
+    display: inline-block;
+}
+#what_am_i{
+    font-size: 1.5em;
+    color: white;
+    /* margin-left: 150px; */
+}
