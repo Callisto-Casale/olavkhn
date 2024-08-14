@@ -126,6 +126,9 @@ body{
     color: white;
     /* margin-left: 150px; */
 }
+#particles-js-canvas-el{
+    top: -30px !important;
+}
 #particles-js{
     position: fixed;
     width: 100%;
