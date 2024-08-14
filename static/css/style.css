@@ -130,7 +130,7 @@ body{
     position: fixed;
     width: 100%;
     height: 100%;
-    top: 380px !important;
+    top: 290px !important;
     bottom: -150px !important;
     background-color: rgb(20, 20, 20);
     z-index: -1;
