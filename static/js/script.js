@@ -5,7 +5,7 @@ let letterIndex = 0;
 let isDeleting = false;
 let typingSpeed = 450;
 
-particlesJS.load('particles-js', 'static/json/particles-config.json', function() {
+particlesJS.load('particles-js', 'static/json/particlesjs-config.json', function() {
     console.log('callback - particles.js config loaded');
   });
 
