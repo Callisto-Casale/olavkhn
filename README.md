@@ -2,30 +2,6 @@
 
 Hi! My name is Olav and this repository contains the code for my portfolio website built with Python Flask, HTML, CSS and JavaScript. This site showcases my work, skills, and experience.
 
-## 🛠 Setup
-
-To get the portfolio project running on a local machine, follow these instructions:
-
-### Prerequisites
-
-- [Python](https://www.python.org/) (version 3.7 or higher recommended)
-- [Flask](https://flask.palletsprojects.com/) (web framework for Python)
-- [Git](https://git-scm.com/) (for version control)
-
-1. **Install dependencies**
-
-   Run the following command to install the required Python packages:
-
-   `pip install -r requirements.txt`
-
-2. **Run the Flask development server**
-
-   Start the Flask development server with:
-
-   `flask run`
-
-   Your portfolio website should now be available at `http://localhost:5000`.
-
 ## 📂 Project Structure
 
 - `app/`: Contains the Flask application code.
