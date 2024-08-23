@@ -15,7 +15,7 @@ app = Flask(__name__)
 def hello_world():
     return render_template("index.html")
 
-#? Function from `https://docs.github.com/en/webhooks/using-webhooks/validating-webhook-deliveries`
+#? Function is from `https://docs.github.com/en/webhooks/using-webhooks/validating-webhook-deliveries`
 def verify_signature(payload_body, secret_token, signature_header):
     """Verify that the payload was sent from GitHub by validating SHA256.
 
