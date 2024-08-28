@@ -7,8 +7,7 @@ Hi! My name is Olav and this repository contains the code for my portfolio websi
 - `app/`: Contains the Flask application code.
   - `static/`: Static files like JavaScript, CSS, and images.
   - `templates/`: HTML templates for rendering pages.
-  - `main.py`: Main Flask application file.
-- `requirements.txt`: Lists Python dependencies for the project.
+  - `app.py`: Main Flask application file.
 - `README.md`: This file.
 
 ## 🚀 Deployment
