@@ -46,9 +46,7 @@ def github_reload():
     except Exception as e:
         return str(e), 403
 
-    # Check if the request is from GitHub
     if request.headers.get('X-GitHub-Event') == 'push':
-        # Pull the latest changes from the repository
         subprocess.run(['git', 'pull'])
         return 'Webhook received', 200
     else:
