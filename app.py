@@ -5,7 +5,7 @@ from http.client import HTTPException
 import os
 import subprocess
 from flask import Flask, request
-from flask import render_templategi
+from flask import render_template
 from dotenv import load_dotenv
 load_dotenv()
 
