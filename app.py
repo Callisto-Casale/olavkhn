@@ -36,7 +36,7 @@ def verify_signature(payload_body, secret_token, signature_header):
 @app.route('/reload', methods=['POST'])
 def github_reload():
     """
-    A function to reload the Flask server when a push event is received from GitHub.
+    A function to reload the Flask server when a push event is received from GitHub. Test changes
     """
     
     payload_body = request.get_data()
