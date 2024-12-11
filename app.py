@@ -13,7 +13,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
-    return "Hello World!"
+    return "Hello World! and it works!"
 
 #? Function is from `https://docs.github.com/en/webhooks/using-webhooks/validating-webhook-deliveries`
 def verify_signature(payload_body, secret_token, signature_header):
