@@ -5,7 +5,7 @@ from http.client import HTTPException
 import os
 import subprocess
 from flask import Flask, request
-from flask import render_template
+from flask import render_templategi
 from dotenv import load_dotenv
 load_dotenv()
 
@@ -13,7 +13,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
-    return render_template("index.html")
+    return "Hello World!"
 
 #? Function is from `https://docs.github.com/en/webhooks/using-webhooks/validating-webhook-deliveries`
 def verify_signature(payload_body, secret_token, signature_header):
